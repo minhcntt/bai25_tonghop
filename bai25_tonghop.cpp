@@ -22,8 +22,8 @@ bool isSNT(int so) {
 }
 int main()
 {
-	int so, tongso = 0;
-	cout << "tong so chan\n"; cin >> so;
+	double so, tongso = 0;
+	cout << "tong so chan: "; cin >> so;
 	for (int i = 0; i < so; i++)
 	{
 		if (i % 2 == 0) {
@@ -32,7 +32,7 @@ int main()
 
 		}
 	}
-	cout << "\ntong so le\n"; cin >> so;
+	cout << "\ntong so le: ";
 	for (int i = 0; i < so; i++)
 	{
 		if (i % 2 != 0) {
@@ -42,9 +42,9 @@ int main()
 	}
 
 	{
-		double giaithua = 1, so;
+		double giaithua = 1;
 
-		cout << "\nnhap giaithua: "; cin >> so;
+		cout << "\nnhap giai thua: ";
 		for (double i = 1; i <= so; i++)
 		{
 			giaithua = giaithua * i;
@@ -54,17 +54,18 @@ int main()
 
 	}
 	int so1 = 0, so2 = 1, tong = so1 + so2;
-	int soluong;
-	cout << " \nnhap so luong so tren day so Fibonacci: "; cin >> soluong;
+
+	cout << " \nnhap so luong so tren day so Fibonacci: ";
 	cout << so1 << " " << so2 << " ";
-	for (int i = 0; i < soluong - 2; i++)
+	for (int i = 0; i < so - 2; i++)
 	{
 		cout << tong << " ";
 		so1 = so2;
 		so2 = tong;
 		tong = so1 + so2;
 	}
-	cout << "\nnhap songuyen:"; cin >> so;
+
+
 	for (int i = 1; i <= so; i++)
 	{
 		if (isSNT(i)) {
@@ -72,6 +73,7 @@ int main()
 		}
 	}
 }
+
 
 
 //100 != ?
